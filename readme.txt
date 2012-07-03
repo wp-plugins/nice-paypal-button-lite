@@ -4,7 +4,7 @@ Donate link: http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-bu
 Tags: paypal, button, buy now, ecommerce, shortcode, buy now button, paypal button, paypal buy now button, paypal plugin, paypal plugin for wordpress
 
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.4.1
 Stable tag: trunk
 
 Nice PayPal Button Lite gives you the power to create PayPal Buy Now buttons wherever you choose, by simply adding shortcodes to your post or page.
@@ -73,10 +73,16 @@ You can find the Nice PayPal Button Lite Documentation here. [http://trinitronic
 
 == Changelog ==
 
+= 1.01 =
+* Security update: closed various security holes. Update recommended.
+
 = 1.0 =
 * First release of the plugin
 
 == Upgrade Notice ==
+
+= 1.01 =
+* Security update: closed various security holes. Update recommended.
 
 = 1.0 =
 * First release of the plugin

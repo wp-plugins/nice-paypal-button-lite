@@ -6,7 +6,7 @@
 Plugin Name: Nice PayPal Button Lite
 Plugin URI: http://trinitronic.com/index.php/Downloads/downloads.html
 Description: The Nice PayPal Button Lite plugin provides you with an easy PayPal payment solution. Simply add a Nice PayPal Button Lite shortcode to your post or page and a PayPal Buy Now button will be published in place of the shortcode. To change the plugin's settings visit the <a href="./options-general.php?page=nicePayPalButtonLite.php" target="_self" >settings page.</a>
-Version: 1.0
+Version: 1.01
 Author: TriniTronic
 Author URI: http://trinitronic.com
 License: GPLv2 or later
@@ -81,77 +81,90 @@ if (!class_exists("NicePayPalButtonLite")) {
     //Prints out the admin page
     function printAdminPage() {
     
+      global $wpdb;
+      
       $niceOptions = $this->getAdminOptions();
-                         
+      
+      
       if (isset($_POST['update_nicePayPalBUttonLiteSettings'])) {
       
         if (isset($_POST['currency_code'])) {
 
-          $niceOptions['currency_code'] = $_POST['currency_code'];
+          $niceOptions['currency_code'] = $wpdb->escape($_POST['currency_code']);
           
         }
 
         if (isset($_POST['country_code'])) {
 
-          $niceOptions['country_code'] = $_POST['country_code'];
+          $niceOptions['country_code'] = $wpdb->escape($_POST['country_code']);
           
         }
 
         if (isset($_POST['paypal_testmode'])) {
 
-          $niceOptions['paypal_testmode'] = $_POST['paypal_testmode'];
+          $niceOptions['paypal_testmode'] = $wpdb->escape($_POST['paypal_testmode']);
           
         }
 
         if (isset($_POST['button_path'])) {
 
-          $niceOptions['button_path'] = $_POST['button_path'];
+          $niceOptions['button_path'] = $wpdb->escape($_POST['button_path']);
           
         }
 
         if (isset($_POST['default_btnsize'])) {
 
-          $niceOptions['default_btnsize'] = $_POST['default_btnsize'];
+          $niceOptions['default_btnsize'] = $wpdb->escape($_POST['default_btnsize']);
           
         }
 
         if (isset($_POST['open_window'])) {
 
-          $niceOptions['open_window'] = $_POST['open_window'];
+          $niceOptions['open_window'] = $wpdb->escape($_POST['open_window']);
           
         }
 
         if (isset($_POST['paypal_url'])) {
 
-          $niceOptions['paypal_url'] = $_POST['paypal_url'];
+          $niceOptions['paypal_url'] = $wpdb->escape($_POST['paypal_url']);
           
         }
 
         if (isset($_POST['paypal_testurl'])) {
 
-          $niceOptions['paypal_testurl'] = $_POST['paypal_testurl'];
+          $niceOptions['paypal_testurl'] = $wpdb->escape($_POST['paypal_testurl']);
           
         }
 
         if (isset($_POST['paypal_email'])) {
 
-          $niceOptions['paypal_email'] = $_POST['paypal_email'];
+          $niceOptions['paypal_email'] = $wpdb->escape($_POST['paypal_email']);
           
         }
 
         if (isset($_POST['paypal_testemail'])) {
 
-          $niceOptions['paypal_testemail'] = $_POST['paypal_testemail'];
+          $niceOptions['paypal_testemail'] = $wpdb->escape($_POST['paypal_testemail']);
           
         }
           
         update_option($this->adminOptionsName, $niceOptions);
        
         ?>
+        
+        
             
         <div class="updated"><p><strong><?php _e("Settings Updated.", "nicePayPalButtonLite");?></strong></p></div>
         
       <?php
+      
+        foreach($niceOptions as $k => $v)
+        {
+        
+          $niceOptions[$k] = esc_html($v);
+          
+        }
+        
       } ?>
  
       <div class=wrap>
@@ -241,6 +254,13 @@ if (!class_exists("NicePayPalButtonLite")) {
       $atts['email']            = $atts['paypal_testmode'] ? $atts['paypal_testemail'] : $atts['paypal_email'];
       $atts['button_image']     = $atts['url'].$atts['button_path'].'/i/btn/btn_buynow'.$atts['default_btnsize'].'.gif';
       
+      foreach($atts as $k => $v)
+      {
+      
+        $atts[$k] = esc_html($v);
+        
+      }
+      
       $insert = $this->nicePayPalButtonLiteLiteBuildForm( $atts );
       
       return $insert;
@@ -320,7 +340,6 @@ if (!class_exists("NicePayPalButtonLite")) {
         
         $f .= '<input type="hidden" name="currency_code" value="'.$a['currency_code'].'" />';
         $f .= '<input type="hidden" name="lc" value="'.$a['country_code'].'" />';
-        $f .= '<input type="hidden" name="mrb" value="YRDKF6S68Y7DS" />';
         $f .= '<input type="image" name="submit" style="border: 0;" src="'.$a['button_image'].'" alt="PayPal - The safer, easier way to pay online" />';
         $f .= '</form>';
         
