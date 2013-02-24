@@ -1,6 +1,6 @@
 === Nice PayPal Button Lite ===
 Contributors: mjetpax
-Donate link: http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-button-lite.html
+Donate link: http://trinitronic.com/wordpress/wordpress-nice-paypal-button
 Tags: paypal, button, buy now, ecommerce, shortcode, buy now button, paypal button, paypal buy now button, paypal plugin, paypal plugin for wordpress
 
 Requires at least: 3.0
@@ -11,7 +11,7 @@ Nice PayPal Button Lite gives you the power to create PayPal Buy Now buttons whe
 
 == Description ==
 
-[Upgrade to the full version of the Nice PayPal Button plugin.](http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-button.html "Nice PayPal Button Plugin Full Version")
+[Upgrade to the full version of the Nice PayPal Button plugin.](http://trinitronic.com/wordpress/wordpress-nice-paypal-button "Nice PayPal Button Plugin Full Version")
 
 With the Nice PayPal Button Lite plugin you get the most convenient & flexible way to add PayPal Buy Now buttons to posts and pages!
 
@@ -57,7 +57,7 @@ Some cool features that you get:
 
 Will the Nice PayPal Button Lite create other buttons types, like, Add to Cart, View Cart, Donations, etc?
 
-The Nice PayPal Button Lite only supports Buy Now buttons. However, the full version of the [Nice PayPal Button plugin](http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-button.html "Nice PayPal Button Plugin Full Version") will allow you to create other button types.
+The Nice PayPal Button Lite only supports Buy Now buttons. However, the full version of the [Nice PayPal Button plugin](http://trinitronic.com/wordpress/wordpress-nice-paypal-button "Nice PayPal Button Plugin Full Version") will allow you to create other button types.
 
 How many buttons can I place in a post or page?
 
@@ -65,11 +65,11 @@ This is unlimited. You may place as many buttons as you would like in a post or 
 
 Where can I get technical support?
 
-You can get support through our support forum [http://trinitronic.com/supportforum/index.php](http://trinitronic.com/supportforum/index.php "Nice PayPal Button Lite Support Forum").
+You can get support through our support forum [http://trinitronic.com/community](http://trinitronic.com/community "Nice PayPal Button Lite Support Forum").
 
 Where can I find the Nice PayPal Button Lite documentation page?
 
-You can find the Nice PayPal Button Lite Documentation here. [http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-button-lite-documentation.html](http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-button-lite-documentation.html "Nice PayPal Button Lite Documentation")
+You can find the Nice PayPal Button Lite Documentation here. [http://trinitronic.com/wordpress-plugin-documentation/wordpress-nice-paypal-button-lite-documentation](http://trinitronic.com/wordpress-plugin-documentation/wordpress-nice-paypal-button-lite-documentation "Nice PayPal Button Lite Documentation")
 
 == Changelog ==
 
