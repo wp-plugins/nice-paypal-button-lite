@@ -4,7 +4,7 @@ Donate link: http://trinitronic.com/index.php/WordPress/wordpress-nice-paypal-bu
 Tags: paypal, button, buy now, ecommerce, shortcode, buy now button, paypal button, paypal buy now button, paypal plugin, paypal plugin for wordpress
 
 Requires at least: 3.0
-Tested up to: 3.4.1
+Tested up to: 3.5.1
 Stable tag: trunk
 
 Nice PayPal Button Lite gives you the power to create PayPal Buy Now buttons wherever you choose, by simply adding shortcodes to your post or page.
@@ -35,7 +35,7 @@ Some cool features that you get:
 * Supports PayPal account based shipping using weight in lbs or kgs.
 * Supports flat tax.
 * Set item quantity.
-* Supports PayPal country codes. 
+* Supports PayPal country codes.
 * Sets PayPal payment page language.
 * Supports all PayPal supported currency codes.
 * Setting for PayPal button language.
@@ -73,6 +73,9 @@ You can find the Nice PayPal Button Lite Documentation here. [http://trinitronic
 
 == Changelog ==
 
+= 1.02 =
+* Updated for WordPress 3.5.1
+
 = 1.01 =
 * Security update: closed various security holes. Update recommended.
 
@@ -87,7 +90,12 @@ You can find the Nice PayPal Button Lite Documentation here. [http://trinitronic
 = 1.0 =
 * First release of the plugin
 
-== Screenshots == 
+== Upgrade Notice ==
+
+= 1.02 =
+* Updated for WordPress 3.5.1
+
+== Screenshots ==
 
 == Documentation ==
 
@@ -135,7 +143,7 @@ The name of the item being sold. If omitted, payers enter their own name at the 
 [nicepaypallite amount="0.00"]
 
 
-The price or amount of the product, service, or contribution, not including shipping & handling, or tax. If omitted from Buy Now payers enter their own amount during checkout on the PayPal payment page. 
+The price or amount of the product, service, or contribution, not including shipping & handling, or tax. If omitted from Buy Now payers enter their own amount during checkout on the PayPal payment page.
 
 *IMPORTANT:* Do not enter a currency symbol, just the numerical amount.
 
@@ -163,7 +171,7 @@ The cost of shipping each additional unit of this item. If omitted and profile-b
 
 [nicepaypallite tax="0.00"]
 
-Transaction-based tax override variable. Set this to a flat tax to the transaction regardless of the buyer’s location. This value overrides any tax settings set in your account profile. 
+Transaction-based tax override variable. Set this to a flat tax to the transaction regardless of the buyer’s location. This value overrides any tax settings set in your account profile.
 
 Default – PayPal profile tax settings, if any, apply.
 
