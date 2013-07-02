@@ -6,7 +6,7 @@
 Plugin Name: Nice PayPal Button Lite
 Plugin URI: http://trinitronic.com/index.php/Downloads/downloads.html
 Description: The Nice PayPal Button Lite plugin provides you with an easy PayPal payment solution. Simply add a Nice PayPal Button Lite shortcode to your post or page and a PayPal Buy Now button will be published in place of the shortcode. To change the plugin's settings visit the <a href="./options-general.php?page=nicePayPalButtonLite.php" target="_self" >settings page.</a>
-Version: 1.02
+Version: 1.05
 Author: TriniTronic
 Author URI: http://trinitronic.com
 License: GPLv2 or later
@@ -393,6 +393,10 @@ if (isset($nice_paypalButtonLite)) {
 
     // Adds shortcode
     add_shortcode('nicepaypallite', array(&$nice_paypalButtonLite, 'getNicePayPalButtonLite'), 1);
+
+    //Enable shortcode replacement in text widgets
+    add_filter( 'widget_text', 'shortcode_unautop');
+    add_filter( 'widget_text', 'do_shortcode', 11);
 
 }
 
